@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'rubik';
+    src: url('assets/fonts/Rubik/static/Rubik-Regular.ttf') format('truetype'),
+         url('assets/fonts/Rubik/static/Rubik-Bold.ttf') format('truetype') ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'rubik' ;
+    background-color: #13161c ;
+    color: rgba(235, 235, 235, 0.925) ;
+}
