@@ -17,3 +17,19 @@
 .blue{
     color: #61bdf6 ;
 }
+
+.round {
+    width: 180px; /* ajustez selon vos besoins */
+    height: 180px; /* ajustez selon vos besoins */
+    background-color: #f0f0f0; /* couleur de fond pour simuler un rond */
+    border-radius: 50%; /* pour rendre l'élément rond */
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.circle {
+    position: relative;
+    z-index: 2;
+}
