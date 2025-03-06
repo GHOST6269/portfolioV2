@@ -12,3 +12,34 @@ body{
     background-color: #13161c ;
     color: rgba(235, 235, 235, 0.925) ;
 }
+
+*{
+  font-family: 'rubik' ;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* 
+    scrollbar
+*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #13161c;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #61bdf6 ;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+  }
+html, body { height: 100%; }

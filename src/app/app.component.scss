@@ -1,8 +1,3 @@
-.circle{
-    border-radius: 50%;
-    border: 2px solid rgb(255, 255, 255) ;
-}
-
 .b-b{
     width: max-content;
     font-weight: bold ;
@@ -19,17 +14,50 @@
 }
 
 .round {
-    width: 180px; /* ajustez selon vos besoins */
+    margin: auto ;
+    width: 170px; /* ajustez selon vos besoins */
     height: 180px; /* ajustez selon vos besoins */
-    background-color: #f0f0f0; /* couleur de fond pour simuler un rond */
+    background-image: url('/assets/profil.jpg'); /* image de fond */
+    background-size: contain ; /* pour ajuster l'image à la taille de l'élément */
     border-radius: 50%; /* pour rendre l'élément rond */
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
+    background-repeat: no-repeat ;
+    border: #61bdf6 solid 2px ;
 }
 
-.circle {
-    position: relative;
-    z-index: 2;
-}
+/* Animation pour afficher les lettres une par une */
+.animated-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Commence à une largeur de 0 pour l'animation */
+    animation: typing 3s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite;
+    color: #61bdf6; /* Couleur de texte ou la couleur de votre choix */
+  }
+  
+  /* Définir l'animation de l'effet de saisie */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Animation du curseur clignotant à la fin du texte */
+  @keyframes blinkCaret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .animated-text::after {
+    content: '|'; /* Ajout du curseur clignotant à la fin */
+    border-right: 2px solid #61bdf6; /* Couleur du curseur */
+    padding-left: 5px;
+    display: inline-block;
+    animation: blinkCaret 0.75s step-end infinite;
+  }
+  
+
